@@ -1,0 +1,12 @@
+.headerBackkGround{
+    background-color: rgba(0, 0, 0, 0.39);
+    z-index: 1;
+    
+}
+
+.mainBackground {
+
+    background-image: url("assets/images/Companyimages/homeBackground.jpeg");
+
+}
+

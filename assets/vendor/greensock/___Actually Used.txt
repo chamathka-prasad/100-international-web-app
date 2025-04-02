@@ -1,0 +1,8 @@
+The theme actually uses:
+
+gsap.min.js
+ScrollSmoother.min.js
+ScrollToPlugin.min.js
+ScrollTrigger.min.js
+
+The rest of the files are there for possible expansion and customization.
