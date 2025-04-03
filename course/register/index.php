@@ -1,6 +1,27 @@
 <?php
 
 require "../../config/MySQLConnector.php";
+
+// Enable error reporting for debugging (remove in production)
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Handle CORS preflight request
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+    header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
+    header("Access-Control-Max-Age: 86400"); // Cache for 1 day
+    exit(0);
+}
+
+// Set CORS headers for actual request
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
+
+
 ?>
 
 <!DOCTYPE html>
@@ -286,6 +307,7 @@ require "../../config/MySQLConnector.php";
                             $tz = new DateTimeZone("Asia/Colombo");
                             $d->setTimezone($tz);
                             $date = $d->format("Y-m-d H:i:s");
+
                             $register = $db->iud("INSERT INTO `courseregister`(`name`,`email`,`mobile`,`date`,`address`,`age`)VALUES(?,?,?,?,?,?)", "sssssi", [$name, $email, $mobile, $date, $address, $age]);
                             // Reset form fields
 
@@ -293,7 +315,7 @@ require "../../config/MySQLConnector.php";
                     ?>
                                 <script>
                                     alert("Register Success");
-                                    window.location="../";
+                                    window.location = "../";
                                 </script>
                             <?php
 

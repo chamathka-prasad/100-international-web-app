@@ -110,12 +110,12 @@ if ($_GET["code"] != null && $_GET["code"] == 935522) {
 
                     <tr>
                         <td><?php echo $i + 1 ?></td>
-                        <td><?php echo $details[0]["name"] ?></td>
-                        <td><?php echo $details[0]["email"] ?></td>
-                        <td><?php echo $details[0]["mobile"] ?></td>
-                        <td><?php echo $details[0]["address"] ?></td>
-                        <td><?php echo $details[0]["age"] ?></td>
-                        <td><?php echo $details[0]["date"] ?></td>
+                        <td><?php echo $details[$i]["name"] ?></td>
+                        <td><?php echo $details[$i]["email"] ?></td>
+                        <td><?php echo $details[$i]["mobile"] ?></td>
+                        <td><?php echo $details[$i]["address"] ?></td>
+                        <td><?php echo $details[$i]["age"] ?></td>
+                        <td><?php echo $details[$i]["date"] ?></td>
                     </tr>
                 <?php
                 }
