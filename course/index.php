@@ -104,130 +104,150 @@
 		}
 
 		.modal-content {
-      background-color: rgba(30, 30, 30, 0.95);
-      color: #e0e0e0;
-      border: 1px solid #333;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .modal-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.4;
-      z-index: 0;
-      background-position: center;
-      background-size: cover;
-      filter: grayscale(30%);
-    }
-    
-    .modal-header, .modal-body, .modal-footer {
-      position: relative;
-      z-index: 1;
-    }
-    
-    .modal-header {
-      border-bottom: 1px solid #333;
-      background-color: rgba(18, 18, 18, 0.7);
-    }
-    
-    .modal-footer {
-      border-top: 1px solid #333;
-      background-color: rgba(18, 18, 18, 0.7);
-    }
-    
-    .btn-primary {
-      background-color: #5e35b1;
-      border-color: #5e35b1;
-      transition: all 0.3s ease;
-    }
-    
-    .btn-primary:hover {
-      background-color: #7c4dff;
-      border-color: #7c4dff;
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4);
-    }
-    
-    .btn-close {
-      filter: invert(1);
-      z-index: 2;
-    }
-    
-    .bank-details {
-      background-color: rgba(37, 37, 37, 0.8);
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      backdrop-filter: blur(5px);
-    }
-    
-    .bank-details h5 {
-      color: #bb86fc;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-    
-    .detail-item {
-      margin-bottom: 10px;
-      display: flex;
-    }
-    
-    .detail-label {
-      font-weight: 600;
-      color: #bb86fc;
-      width: 140px;
-    }
-    
-    .contact-details {
-      background-color: rgba(37, 37, 37, 0.8);
-      padding: 20px;
-      border-radius: 8px;
-      backdrop-filter: blur(5px);
-    }
-    
-    .contact-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    
-    .contact-icon {
-      margin-right: 10px;
-      color: #bb86fc;
-    }
-    
-    .top-image-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-      position: relative;
-    }
-    
-    .top-image-container img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    }
-    
-    .highlight {
-      color: #cf6679;
-      font-weight: 600;
-    }
-    
-    .modal-title {
-      color: #bb86fc;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+			background-color: rgba(30, 30, 30, 0.95);
+			color: #e0e0e0;
+			border: 1px solid #333;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+			position: relative;
+			overflow: hidden;
+		}
 
+		.modal-background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.4;
+			z-index: 0;
+			background-position: center;
+			background-size: cover;
+			filter: grayscale(30%);
+		}
+
+		.modal-header,
+		.modal-body,
+		.modal-footer {
+			position: relative;
+			z-index: 1;
+		}
+
+		.modal-header {
+			border-bottom: 1px solid #333;
+			background-color: rgba(18, 18, 18, 0.7);
+		}
+
+		.modal-footer {
+			border-top: 1px solid #333;
+			background-color: rgba(18, 18, 18, 0.7);
+		}
+
+		.btn-primary {
+			background-color: #5e35b1;
+			border-color: #5e35b1;
+			transition: all 0.3s ease;
+		}
+
+		.btn-primary:hover {
+			background-color: #7c4dff;
+			border-color: #7c4dff;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4);
+		}
+
+		.btn-close {
+			filter: invert(1);
+			z-index: 2;
+		}
+
+		.bank-details {
+			background-color: rgba(37, 37, 37, 0.8);
+			padding: 20px;
+			border-radius: 8px;
+			margin-bottom: 20px;
+			backdrop-filter: blur(5px);
+		}
+
+		.bank-details h5 {
+			color: #bb86fc;
+			margin-bottom: 15px;
+			font-weight: 600;
+		}
+
+		.detail-item {
+			margin-bottom: 10px;
+			display: flex;
+		}
+
+		.detail-label {
+			font-weight: 600;
+			color: #bb86fc;
+			width: 140px;
+		}
+
+		.contact-details {
+			background-color: rgba(37, 37, 37, 0.8);
+			padding: 20px;
+			border-radius: 8px;
+			backdrop-filter: blur(5px);
+		}
+
+		.contact-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.contact-icon {
+			margin-right: 10px;
+			color: #bb86fc;
+		}
+
+		.top-image-container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+			position: relative;
+		}
+
+		.top-image-container img {
+			width: 100%;
+			max-height: 200px;
+			object-fit: cover;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+		}
+
+		.highlight {
+			color: #cf6679;
+			font-weight: 600;
+		}
+
+		.modal-title {
+			color: #bb86fc;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+		.dark-button {
+			z-index: 1;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .dark-button:hover {
+            background-color: #555;
+        }
 	</style>
 
 </head>
@@ -346,8 +366,14 @@
 									<div class="hero-h1-box">
 										<div class="cover-text-wrapper">
 											<h1 class="hero-h1 animated-element phase-1 text-center text-md-start text-white">Advanced<br /> Video Editing<br />And <br />Cinema Course</h1>
+											<button class="">
+												<i class="fas fa-external-link-alt"></i> Open New Tab
+											</button>
+											<a class="btn btn-danger animated-element phase-1 mb-2 " href="#"  onclick="window.open('register', '_blank')" role="button"> <i class="fas fa-external-link-alt"></i>&nbsp;&nbsp; REGISTER</a>
+											<a class="btn btn-primary btn-lg animated-element phase-1 mb-2" data-bs-toggle="modal" data-bs-target="#bankDetailsModal" href="#about-us" role="button"><i class="fas fa-university me-2"></i> View Bank Details</a>
 										</div>
 									</div>
+
 
 									<!-- Bottom Left box -->
 									<div class="hero-box-bottom-left text-center text-sm-start">
@@ -614,7 +640,7 @@
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-										
+
 										</div>
 									</div>
 								</div>
