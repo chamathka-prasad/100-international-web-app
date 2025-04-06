@@ -233,21 +233,21 @@
 							</div>
 							<div class="col-xl-6 col-xxl-5 sk__project-body-info-col mt-4 mt-xl-0 pt-5 pt-xl-0 text-center text-sm-start">
 								<h4 class="animated-element">WELCOME TO OUR ADVANCED VIDEO EDITING AND CINEMA COURSE !</h4>
-								<p class="text-danger animated-element text-end fs-6" style="font-size:xx-small;">- BY 100 INTERNATIONAL - SCHOOL OF CREATIVITY -</p>
-								<p class="animated-element text-warning ">IF YOU WANT TO EXPRESS YOUR EXPERIENCE ON ANY PLATFORM LIKE YOUTUBE, THIS COURSE IS SPECIALLY DESIGNED FOR YOU !
-									<br>
+								<p class="text-danger animated-element text-end fs-6 tagline">- BY 100 INTERNATIONAL - SCHOOL OF CREATIVITY -</p>
+								<p class="animated-element course-desc">
+  IF YOU WANT TO EXPRESS YOUR EXPERIENCE ON ANY PLATFORM LIKE YOUTUBE, THIS COURSE IS SPECIALLY DESIGNED FOR YOU !
+</p>
 
+<div class="row">
+    <div class="col-12 d-flex align-items-center">
+        <h5 class="animated-element  mr-3 mt-4">Check this Handbook for More details :</h5>
+        <a class="btn btn-outline-light animated-element text-hover-background-swipe-button mt-5" href="#" role="button" onclick="downloadPdf()" style="position: relative; left: 17px;">Download</a>
+    </div>
+</div>
 
-								</p>
-								<div class="row">
-									<div class="col-12 col-sm-12">
-										<h5 class="animated-element">Check this Handbook for More details</h5>
-										<a class="btn btn-outline-light animated-element text-hover-background-swipe-button" href="#" role="button" onclick="downloadPdf()">Download</a>
-									</div>
-
-								</div>
-								<a class="btn btn-outline-light animated-element text-hover-background-swipe-button" href="course/" role="button">View Course Details -></a>
-
+    <div class="col-12 d-flex justify-content-center">
+        <a class="btn btn-outline-light animated-element text-hover-background-swipe-button" href="course/" role="button">View Course Details -></a>
+    </div>
 
 							</div>
 						</div>
