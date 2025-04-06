@@ -8663,7 +8663,7 @@ a.sk__iconbox-icon-link:hover span[class*="icon-"].sk__gradient-fancy-text {
 	}
 }
 
-/* Coming soon page text sizes correction */.
+/* Coming soon page text sizes correction */
 
 @media all and (max-width: 767px) {
 	.sk__coming-soon-page .sk__main-slide-content h2, 
