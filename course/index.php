@@ -606,7 +606,7 @@
 												<h5><i class="fas fa-university me-2"></i>BANK INFORMATION</h5>
 												<div class="detail-item">
 													<span class="detail-label">ACCOUNT NO:</span>
-													<span class="detail-value">008601884</span>
+													<span class="detail-value">0086018840</span>
 												</div>
 												<div class="detail-item">
 													<span class="detail-label">ACCOUNT NAME:</span>
@@ -627,6 +627,9 @@
 												<div class="detail-item">
 													<span class="detail-label">CURRENCY:</span>
 													<span class="detail-value">LKR</span>
+												</div>
+												<div class="detail-item">
+												<img src="../assets/images/Companyimages/courses/bank.jpeg"  alt="">
 												</div>
 											</div>
 
