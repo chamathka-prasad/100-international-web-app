@@ -47,6 +47,7 @@
  * ================
  */
 
+
 .sk__master-curtain {
 	position: fixed;
 	width: 100vw;
@@ -420,6 +421,7 @@
 	.row > * {
 		padding-left: 20px;
 		padding-right: 20px;
+		
 	}
 
 }
@@ -2660,6 +2662,7 @@ span.h3-super.sk__gradient-fancy-text-back {
 	font-family: 'Poppins', sans-serif;
 	font-size: 33px;
 	line-height: 1.5;
+	
 }
 h3.h3-super.narrow, 
 span.h3-super.sk__gradient-fancy-text-back.narrow {
@@ -2694,6 +2697,51 @@ h3.h3-super.thin strong,
 span.h3-super.thin.sk__gradient-fancy-text-back strong {
 	font-weight: 600;
 }
+
+
+
+h3.h3-super, 
+span.h3-super.sk__gradient-fancy-text-back {
+	margin-bottom: 0.9em;
+	letter-spacing: -0.24px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 33px;
+	line-height: 1.5;
+}
+h3.h3-super.narrow, 
+span.h3-super.sk__gradient-fancy-text-back.narrow {
+	letter-spacing: -1.3px;
+}
+h3.h3-super.shadowed {
+	color: #000000;
+}
+@media all and (min-width: 992px) and (max-width: 1199px) { /* lg */
+	h3.h3-super, 
+	span.h3-super.sk__gradient-fancy-text-back {
+		font-size: 30px;
+	}	
+}
+@media all and (min-width: 576px) and (max-width: 767px) { /* sm */
+	h3.h3-super, 
+	span.h3-super.sk__gradient-fancy-text-back {
+		font-size: 27px;
+	}	
+}
+@media all and (max-width: 575px) { /* xs */
+	h3.h3-super, 
+	span.h3-super.sk__gradient-fancy-text-back {
+		font-size: 23px;
+	}	
+}
+h3.h3-super.thin, 
+span.h3-super.thin.sk__gradient-fancy-text-back {
+	font-weight: 200;
+}
+h3.h3-super.thin strong, 
+span.h3-super.thin.sk__gradient-fancy-text-back strong {
+	font-weight: 600;
+}
+
 
 h4 {
 	font-family: 'Poppins', sans-serif;
@@ -9040,3 +9088,5 @@ h2.h2-super.theme-preview-hero-h2 {
 .sf-error-message {
 	color: #ff6371;
 }
+
+
