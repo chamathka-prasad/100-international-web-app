@@ -111,19 +111,6 @@
 			overflow: hidden;
 			border-radius:8px;
 		}
-
-	
-	
-		.row{
-			margin :1rem;
-		}
-		
-
-
-		#m-left{
-			margin-left: 10rem;
-		}
-	
 		
 	</style>
 	<script>
@@ -241,8 +228,8 @@
 					
 
 				</section>
-				<!-- /.sk__article-header -->
-				<!-- Image boxes with paragraph -->
+
+
 				<section class="sk__pt-l" id="team-section">
 					<div class="container sk__supercontainer">
 						<div class="row">
@@ -250,96 +237,101 @@
 								<h3 class="h3-super">Executive Directors</h3>
 							</div>
 						</div>
-						<div class="row sk__imageboxes">
-							<div class="col-12 col-sm-6 col-lg-3">
+						<div class="row sk__imageboxes justify-content-center">
+							<div class="col-12 col-sm-6 col-lg-3 text-center">
 								<a class="sk__imagebox" href="page-service-item.html">
 									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-									<div class="sk__imagebox-img-wrap">
-										<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Mayura_CEO.png" alt="Screenshot of the demo website">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Mayura_CEO.png" alt="Screenshot of the demo website">
 									</div>
-									<div class="sk__imagebox-text-wrap">
+									<div class="sk__imagebox-text-wrap text-center">
 										<h5 class="h6">Chief Executive Officer (CEO) <br>Co-Director Of Content Development</h5>
 										<h5 class="">Mayura Athukorala</h5>
-
-										<!-- <p>description</p> -->
 									</div>
 								</a>
 							</div>
 
-							<div class="col-12 col-sm-6 col-lg-3">
+							<div class="col-12 col-sm-6 col-lg-3 text-center">
 								<a class="sk__imagebox" href="page-service-item.html">
 									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-									<div class="sk__imagebox-img-wrap">
-										<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Eranda_Chamara.jpg" alt="Screenshot of the demo website">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Eranda_Chamara.jpg" alt="Screenshot of the demo website">
 									</div>
-									<div class="sk__imagebox-text-wrap">
+									<div class="sk__imagebox-text-wrap text-center">
 										<h5 class="h6">Chief Creative Officer (CCO) <br>Co-Director Of Content Development</h5>
 										<h5 class="">Eranda Chamara</h5>
-
-										<!-- <p>description</p> -->
 									</div>
 								</a>
 							</div>
-							<div class="col-12 col-sm-6 col-lg-3">
+							<div class="col-12 col-sm-6 col-lg-3 text-center">
 								<a class="sk__imagebox" href="page-service-item.html">
 									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-									<div class="sk__imagebox-img-wrap">
-										<img class="sk__imagebox-img" id="cto" src="../assets/images/Companyimages/team/chamathka.jpg" alt="Screenshot of the demo website">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" id="cto" src="../assets/images/Companyimages/team/chamathka.jpg" alt="Screenshot of the demo website">
 									</div>
-									<div class="sk__imagebox-text-wrap">
+									<div class="sk__imagebox-text-wrap text-center">
 										<h5 class="h6">Chief Technical Officer <br> (CTO) </h5>
 										<h5 class="">Chamathka Prasad</h5>
-
-										<!-- <p>description</p> -->
 									</div>
 								</a>
 							</div>
 
-							
-
-							<div class="col-12 col-sm-6 col-lg-3">
-								<a class="sk__imagebox" href="page-service-item.html">
-									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-									<div class="sk__imagebox-img-wrap">
-										<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Iruni_CFO.png" alt="Screenshot of the demo website">
-									</div>
-									<div class="sk__imagebox-text-wrap">
-										<h5 class="h6">Chief Financial Officer (CFO) <br>Director of Internationals and Customer Relations</h5>
-										<h5 class="">Iruni Kalupahana</h5>
-
-										<!-- <p>description</p> -->
-									</div>
-								</a>
-							</div>
-
-
-							
-							<div class="row sk__imageboxes" >
-								<div class="row">
-									<div class="col text-center sk__heading-spacer-m">
-										<h3  class="h3-super"> Non-Executive Contributors</h3>
-									</div>
-								</div> 
-								<!-- <div  id="margin"> -->
-								<div class="col-12 col-sm-6 col-lg-3" id="m-left"  >
+							<div class="row sk__imageboxes justify-content-center">
+								<div class="col-12 col-sm-6 col-lg-3 text-center">
 									<a class="sk__imagebox" href="page-service-item.html">
 										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-										<div class="sk__imagebox-img-wrap">
-											<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Damian_COO.png" alt="Screenshot of the demo website">
+										<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+											<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Damian_COO.png" alt="Screenshot of the demo website">
 										</div>
-										<div class="sk__imagebox-text-wrap">
-
-											<h5 class="h6">Chief Operations Officer (COO) <br>Co-Director Of Content Development</h5>
+										<div class="sk__imagebox-text-wrap text-center">
+											<h5 class="h6">Chief Creative Officer (CCO) <br>Co-Director Of Content Development</h5>
 											<h5 class="">Damian Fernando</h5>
-											
-
-											<!-- <p>description</p> -->
 										</div>
 									</a>
 								</div>
-						
 
-						<!-- <div class="col-12 col-sm-6 col-lg-3">
+								<div class="col-12 col-sm-6 col-lg-3 text-center">
+									<a class="sk__imagebox" href="page-service-item.html">
+										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
+										<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+											<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Iruni_CFO.png" alt="Screenshot of the demo website">
+										</div>
+										<div class="sk__imagebox-text-wrap text-center">
+											<h5 class="h6">Chief Financial Officer (CFO) <br>Director of Internationals and Customer Relations</h5>
+											<h5 class="">Iruni Kalupahana</h5>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+		
+						<div class="row sk__imageboxes justify-content-center">
+    						<div class="row">
+								<div class="col text-center sk__heading-spacer-m"><br>
+									<h3 class="h3-super"> Non-Executive Contributors</h3>
+								</div>
+							</div> 
+							<!-- <div  id="margin"> -->
+							<!-- <div class="col-12 col-sm-6 col-lg-3" id="m-left"  >
+								<a class="sk__imagebox" href="page-service-item.html">
+									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
+									<div class="sk__imagebox-img-wrap">
+										<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Damian_COO.png" alt="Screenshot of the demo website">
+									</div>
+									<div class="sk__imagebox-text-wrap">
+
+										<h5 class="h6">Chief Creative Officer (CCO) <br>Co-Director Of Content Development</h5>
+										<h5 class="">Damian Fernando</h5>
+										
+
+											<p>description</p> 
+									</div>
+								</a>
+							</div> -->
+
+
+							<!-- <div class="col-12 col-sm-6 col-lg-3">
 							<a class="sk__imagebox" href="page-service-item.html">
 								<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
 								<div class="sk__imagebox-img-wrap">
@@ -354,135 +346,118 @@
 							</a>
 						</div> -->
 
-								<div class="col-12 col-sm-6 col-lg-3" >
-									<a class="sk__imagebox" href="page-service-item.html">
-										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-										<div class="sk__imagebox-img-wrap">
-											<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Chiran_FA.png" alt="Screenshot of the demo website">
-										</div>
-										<div class="sk__imagebox-text-wrap">
-											<h5 class="h6">Chief Financial Analytics Officer (FA)</h5>
-											<h5 class="">Chiran Gunathilaka</h5>
-
-											<!-- <p>description</p> -->
-										</div>
-									</a>
-								</div>
-
-
-								<div class="col-12 col-sm-6 col-lg-3" id="m-right">
-									<a class="sk__imagebox" href="page-service-item.html">
-										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-										<div class="sk__imagebox-img-wrap">
-											<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Kaveesh_HR.png" alt="Screenshot of the demo website">
-										</div>
-										<div class="sk__imagebox-text-wrap">
-											<h5 class="h6">Director of Human Resources (HR)</h5>
-											<h5 class="">Kaveesh</h5>
-
-											<!-- <p>description</p> -->
-										</div>
-									</a>
-								</div>
-								<!-- </div> -->
-
-							<!-- </div> -->
-							
-							</div>
-
-							<div class="row sk__imageboxes" >
-								<div class="row">
-									<div class="col text-center sk__heading-spacer-m">
-										<h3 class="h3-super"> Employees</h3>
+							<div class="col-12 col-sm-6 col-lg-3 text-center">
+								<a class="sk__imagebox" href="page-service-item.html">
+									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Chiran_FA.png" alt="Screenshot of the demo website">
 									</div>
-								</div>
-						
-								<!--Added 3 images--->
-								<div class="col-12 col-sm-6 col-lg-3">
-									<a class="sk__imagebox" href="page-service-item.html">
-										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-										<div class="sk__imagebox-img-wrap">
-											<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/jayathi.JPG" alt="Screenshot of the demo website">
-										</div>
-										<div class="sk__imagebox-text-wrap">
-											<h5 class="h6">Web Developer - Intern<br>Gaining hands-on experience with real-world web development projects</h5>
-											<h5 class="">Jayathi Colambage</h5>
+									<div class="sk__imagebox-text-wrap text-center">
+										<h5 class="h6">Chief Financial Analytics Officer (FA)</h5>
+										<h5 class="">Chiran Gunathilaka</h5>
 
-											<!-- <p>description</p> -->
-										</div>
-									</a>
-								</div>
-
-								<div class="col-12 col-sm-6 col-lg-3">
-									<a class="sk__imagebox" href="page-service-item.html">
-										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-										<div class="sk__imagebox-img-wrap">
-											<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/zeenath-intern-web.jpeg" alt="Screenshot of the demo website">
-										</div>
-										<div class="sk__imagebox-text-wrap">
-											<h5 class="h6">Web Developer - Intern<br>Gaining hands-on experience with real-world web development projects</h5>
-											<h5 class="">Zeenath Hamza</h5>
-
-									<!-- <p>description</p> -->
-										</div>
-									</a>
-								</div>
-
-								<div class="col-12 col-sm-6 col-lg-3">
-									<a class="sk__imagebox" href="page-service-item.html">
-										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-										<div class="sk__imagebox-img-wrap">
-											<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/liyanarachchi-intern-web.jpeg" alt="Screenshot of the demo website">
-										</div>
-										<div class="sk__imagebox-text-wrap">
-											<h5 class="h6">Web Developer - Intern <br>Gaining hands-on experience with real-world web development projects</h5>
-											<h5 class="">Thisal Liyanaarachchi</h5>
-
-											<!-- <p>description</p> -->
-										</div>
-									</a>
-								</div>
-
-								<div class="col-12 col-sm-6 col-lg-3">
-									<a class="sk__imagebox" href="page-service-item.html">
-										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
-										<div class="sk__imagebox-img-wrap">
-											<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/gallage_sm.jpeg">
-										</div>
-										<div class="sk__imagebox-text-wrap">
-											<h5 class="h6">Social Media Handler-Intern <br>Handling Social media Promotion of the company</h5>
-											<h5 class="">Damindu Gallage</h5>
-
-											<!-- <p>description</p> -->
-										</div>
-									</a>
-								</div>
-
-
+										<!-- <p>description</p> -->
+									</div>
+								</a>
 							</div>
-				
-<!-- 
-							<div class="col-12 col-sm-6 col-lg-3">
+
+
+							<div class="col-12 col-sm-6 col-lg-3 text-center" id="m-right">
+								<a class="sk__imagebox" href="page-service-item.html">
+									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Kaveesh_HR.png" alt="Screenshot of the demo website">
+									</div>
+									<div class="sk__imagebox-text-wrap text-center">
+										<h5 class="h6">Director of Human Resources (HR)</h5>
+										<h5 class="">Kaveesh</h5>
+
+										<!-- <p>description</p> -->
+									</div>
+								</a>
+							</div>
+
+
+						</div>
+
+						<div class="row sk__imageboxes justify-content-center">
+							<div class="row">
+								<div class="col text-center sk__heading-spacer-m"><br>
+									<h3 class="h3-super"> Employees</h3>
+								</div>
+							</div>
+
+							<!--Added 3 images--->
+							<div class="col-12 col-sm-6 col-lg-3 text-center">
+								<a class="sk__imagebox" href="page-service-item.html">
+									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/jayathi.JPG" alt="Screenshot of the demo website">
+									</div>
+									<div class="sk__imagebox-text-wrap text-center">
+										<h5 class="h6">Web Developer - Intern<br>Gaining hands-on experience with real-world web development projects</h5>
+										<h5 class="">Jayathi Colambage</h5>
+
+										<!-- <p>description</p> -->
+									</div>
+								</a>
+							</div>
+
+							<div class="col-12 col-sm-6 col-lg-3 text-center">
+								<a class="sk__imagebox" href="page-service-item.html">
+									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/zeenath-intern-web.jpeg" alt="Screenshot of the demo website">
+									</div>
+									<div class="sk__imagebox-text-wrap text-center">
+										<h5 class="h6">Web Developer - Intern<br>Gaining hands-on experience with real-world web development projects</h5>
+										<h5 class="">Zeenath Hamza</h5>
+
+								<!-- <p>description</p> -->
+									</div>
+								</a>
+							</div>
+
+							<!-- <div class="col-12 col-sm-6 col-lg-3">
 								<a class="sk__imagebox" href="page-service-item.html">
 									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
 									<div class="sk__imagebox-img-wrap">
-										<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/Thisara_Director Of Analytics.jpg" alt="Screenshot of the demo website">
+										<img class="sk__imagebox-img" src="../assets/images/Companyimages/team/liyanarachchi-intern-web.jpeg" alt="Screenshot of the demo website">
 									</div>
 									<div class="sk__imagebox-text-wrap">
-										<h5 class="h6">Director of Analytics</h5>
-										<h5 class="">Thisara Perera</h5>
+										<h5 class="h6">Web Developer - Intern <br>Gaining hands-on experience with real-world web development projects</h5>
+										<h5 class="">Thisal Liyanaarachchi</h5>
 
+										<p>description</p> 
 									</div>
 								</a>
 							</div> -->
 
-							
-							</div>
+							<div class="col-12 col-sm-6 col-lg-3 text-center">
+								<a class="sk__imagebox" href="page-service-item.html">
+									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
+									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/gallage_sm.jpeg">
+									</div>
+									<div class="sk__imagebox-text-wrap text-center">
+										<h5 class="h6">Social Media Handler-Intern <br>Handling Social media Promotion of the company</h5>
+										<h5 class="">Damindu Gallage</h5>
+
+										<!-- <p>description</p> -->
+									</div>
+        						</a>
+    						</div>
+
 
 						</div>
+
 					</div>
+
+				
+
 				</section>
 
+				
 				<!-- Post/Article Content
 				================================================== -->
 				<div class="container sk__supercontainer sk__blog sk__fade-in-10 pt-5">
