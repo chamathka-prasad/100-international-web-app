@@ -54,15 +54,13 @@
 
 	<!-- Added styles here since not applying the updates in other files -->
 	<style>
-
-
 		.scroll-down {
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
 			position: relative;
-			background-color:rgba(255,143,42,1) ;
-			top: 20px; 
+			background-color: rgba(255, 143, 42, 1);
+			top: 20px;
 			width: 3rem;
 			height: 3rem;
 			border-radius: 50%;
@@ -76,7 +74,7 @@
 			color: #333;
 			transform: scale(1.1);
 			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-			
+
 
 		}
 
@@ -87,39 +85,40 @@
 		.scroll-down i {
 			font-size: 1.7rem;
 			color: #ffff;
-			
+
 		}
 
-		.scroll-down i:hover{
-			color:#333;
+		.scroll-down i:hover {
+			color: #333;
 		}
-/*  */
-		
+
+		/*  */
+
 		@keyframes glow {
 			0% {
 				box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 			}
+
 			100% {
 				box-shadow: 0 0 15px rgba(255, 255, 255, 1);
 			}
 		}
 
-		 .sk__imagebox-img{
+		.sk__imagebox-img {
 
 			width: 200px;
 			height: 250px;
 			overflow: hidden;
-			border-radius:8px;
+			border-radius: 8px;
 		}
-		
 	</style>
 	<script>
-
-	document.querySelector('.scroll-down').addEventListener('click', function (e) {
-		e.preventDefault();
-		document.querySelector('#team-section').scrollIntoView({ behavior: 'smooth' });
-	});
-
+		document.querySelector('.scroll-down').addEventListener('click', function(e) {
+			e.preventDefault();
+			document.querySelector('#team-section').scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
 	</script>
 
 
@@ -211,21 +210,21 @@
 							<div class="col-12">
 								<h1 class="super-heading">Meet Our Team</h1>
 
-								
+
 								<!-- <h2 class="h2-regular thin mb-1">Interesting read and <strong>Long Lasting Impression</strong>. Elegant news article page design.</h2> -->
 							</div>
 							<div class="col-12">
-								<a  class = "scroll-down" >
+								<a class="scroll-down">
 									<i class="fas fa-chevron-down"></i>
 								</a>
 							</div>
-							
 
-							
+
+
 						</div>
 					</div>
 
-					
+
 
 				</section>
 
@@ -263,33 +262,35 @@
 									</div>
 								</a>
 							</div>
+
+
 							<div class="col-12 col-sm-6 col-lg-3 text-center">
 								<a class="sk__imagebox" href="page-service-item.html">
 									<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
 									<div class="sk__imagebox-img-wrap d-flex justify-content-center">
-										<img class="sk__imagebox-img mx-auto" id="cto" src="../assets/images/Companyimages/team/chamathka.jpg" alt="Screenshot of the demo website">
+										<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Damian_COO.png" alt="Screenshot of the demo website">
 									</div>
 									<div class="sk__imagebox-text-wrap text-center">
-										<h5 class="h6">Chief Technical Officer <br> (CTO) </h5>
-										<h5 class="">Chamathka Prasad</h5>
+										<h5 class="h6">Chief Creative Officer (CCO) <br>Co-Director Of Content Development</h5>
+										<h5 class="">Damian Fernando</h5>
 									</div>
 								</a>
 							</div>
 
 							<div class="row sk__imageboxes justify-content-center">
+
 								<div class="col-12 col-sm-6 col-lg-3 text-center">
 									<a class="sk__imagebox" href="page-service-item.html">
 										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
 										<div class="sk__imagebox-img-wrap d-flex justify-content-center">
-											<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Damian_COO.png" alt="Screenshot of the demo website">
+											<img class="sk__imagebox-img mx-auto" id="cto" src="../assets/images/Companyimages/team/chamathka.jpg" alt="Screenshot of the demo website">
 										</div>
 										<div class="sk__imagebox-text-wrap text-center">
-											<h5 class="h6">Chief Creative Officer (CCO) <br>Co-Director Of Content Development</h5>
-											<h5 class="">Damian Fernando</h5>
+											<h5 class="h6">Chief Technical Officer <br> (CTO) </h5>
+											<h5 class="">Chamathka Prasad</h5>
 										</div>
 									</a>
 								</div>
-
 								<div class="col-12 col-sm-6 col-lg-3 text-center">
 									<a class="sk__imagebox" href="page-service-item.html">
 										<img class="sk__imagebox-top-bar" src="../assets/images/demos-thumbs-browser-bar-mockup.svg" alt="An illustration of a web browser top bar">
@@ -305,13 +306,13 @@
 							</div>
 						</div>
 
-		
+
 						<div class="row sk__imageboxes justify-content-center">
-    						<div class="row">
+							<div class="row">
 								<div class="col text-center sk__heading-spacer-m"><br>
 									<h3 class="h3-super"> Non-Executive Contributors</h3>
 								</div>
-							</div> 
+							</div>
 							<!-- <div  id="margin"> -->
 							<!-- <div class="col-12 col-sm-6 col-lg-3" id="m-left"  >
 								<a class="sk__imagebox" href="page-service-item.html">
@@ -413,7 +414,7 @@
 										<h5 class="h6">Web Developer - Intern<br>Gaining hands-on experience with real-world web development projects</h5>
 										<h5 class="">Zeenath Hamza</h5>
 
-								<!-- <p>description</p> -->
+										<!-- <p>description</p> -->
 									</div>
 								</a>
 							</div>
@@ -445,19 +446,19 @@
 
 										<!-- <p>description</p> -->
 									</div>
-        						</a>
-    						</div>
+								</a>
+							</div>
 
 
 						</div>
 
 					</div>
 
-				
+
 
 				</section>
 
-				
+
 				<!-- Post/Article Content
 				================================================== -->
 				<div class="container sk__supercontainer sk__blog sk__fade-in-10 pt-5">
