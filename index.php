@@ -172,13 +172,16 @@
 											</h1>
 										</div>
 										<div class="cover-text-wrapper">
-											<h2 class="h2-regular thin animated-element phase-1 myFont">If You Think,<br> You are the Game Changer! Always</h2>
-										</div>
+											<h2 class="h2-regular thin animated-element phase-1 myFont">If You Think,<br> You are the Game Changer! Always</h2><br>
+											
+										</div><br>
+										
+
 										<!-- <div class="cover-text-wrapper">
 											<a class="btn btn-lg btn-outline-light animated-element phase-1 text-hover-background-swipe-button" href="#" role="button">SOME LINK -></a>
 										</div> -->
 									</div>
-
+									
 								</section>
 							</div>
 							<!-- /.hero-slide-1 -->
@@ -211,7 +214,7 @@
 						<div class="row">
 							<div class="col text-center">
 								<div class="sk__warped-text-wrapper sk__flex-center">
-									<span class="sk__warped-text">GREATE OPERTUNITY</span>
+									<span class="sk__warped-text">CREATE OPPORTUNITY</span>
 								</div>
 								<h3><strong>CREATE YOUR COMPANY <br>
 										BE A PART OF 100 INTERNATIONAL</strong></h3>

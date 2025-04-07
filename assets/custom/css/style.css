@@ -8,6 +8,7 @@
 }
 
 
+  
 @font-face {
   font-family: "popins-custom"; /*a name to be used later*/
   src: url("../font/Poppins-Regular.ttf"); /*URL to font*/
@@ -26,6 +27,9 @@
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
   }
 }
+
+	
+
 
 .text-spread-outline {
 
@@ -420,3 +424,6 @@ a.sk__iconbox-icon-link > span.sk__iconbox-icon > span.sk__iconbox-trail {
 			z-index: 0;
 			transition: transform 0.3s ease, color 0.3s ease;
 		}
+
+
+  

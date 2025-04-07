@@ -16,6 +16,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
+document.querySelector('.scroll-down').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#team-section').scrollIntoView({ behavior: 'smooth' });
+});
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

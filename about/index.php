@@ -242,7 +242,7 @@
 
 						<div class="row">
 							<div class="col text-center text-sm-start">
-								<h4 class="h4-dark h4-shadow">Our Companies</h4>
+								<h4 class="h4-dark h4-shadow">Our Projects</h4>
 								<span class="fat-divider dark-shade-4-bg"></span>
 							</div>
 						</div>
