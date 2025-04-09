@@ -284,7 +284,7 @@
 											<img class="sk__imagebox-img mx-auto" src="../assets/images/Companyimages/team/Damian_COO.png" alt="Screenshot of the demo website">
 										</div>
 										<div class="sk__imagebox-text-wrap text-center">
-											<h5 class="h6">Chief Creative Officer (CCO) <br>Co-Director Of Content Development</h5>
+											<h5 class="h6">Chief Operating Officer (COO) <br>Co-Director Of Content Development</h5>
 											<h5 class="">Damian Fernando</h5>
 										</div>
 									</a>
