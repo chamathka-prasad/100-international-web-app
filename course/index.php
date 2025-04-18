@@ -174,10 +174,10 @@
 			font-weight: 600;
 		}
 
-		.detail-item {
+		/* .detail-item {
 			margin-bottom: 10px;
 			display: flex;
-		}
+		} */
 
 		.detail-label {
 			font-weight: 600;
@@ -628,9 +628,9 @@
 													<span class="detail-label">CURRENCY:</span>
 													<span class="detail-value">LKR</span>
 												</div>
-												<div class="detail-item">
+												<!-- <div class="detail-item">
 												<img src="../assets/images/Companyimages/courses/bank.jpeg"  alt="">
-												</div>
+												</div> -->
 											</div>
 
 											<div class="contact-details">
