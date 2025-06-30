@@ -173,15 +173,15 @@
 										</div>
 										<div class="cover-text-wrapper">
 											<h2 class="h2-regular thin animated-element phase-1 myFont">If You Think,<br> You are the Game Changer! Always</h2><br>
-											
+
 										</div><br>
-										
+
 
 										<!-- <div class="cover-text-wrapper">
 											<a class="btn btn-lg btn-outline-light animated-element phase-1 text-hover-background-swipe-button" href="#" role="button">SOME LINK -></a>
 										</div> -->
 									</div>
-									
+
 								</section>
 							</div>
 							<!-- /.hero-slide-1 -->
@@ -203,6 +203,25 @@
 				</section>
 
 
+
+
+
+				<!-- <section class="sk__project-body">
+					<div class="container sk__powercontainer">
+						<div class="row">
+
+							<div class="col-xl-6 col-xxl-6 sk__project-body-image-col">
+								<img src="assets/images/Companyimages/posters/cinamaCourse.png" alt="Sample image.">
+							</div>
+							<div class="col-xl-6 col-xxl-6 sk__project-body-image-col">
+								<img src="assets/images/Companyimages/posters/weboffer.png" alt="Sample image.">
+							</div>
+
+							
+							
+						</div>
+					</div>
+				</section> -->
 				<iframe src="latestWork.php" class="iframe-container"></iframe>
 
 
@@ -238,19 +257,19 @@
 								<h4 class="animated-element">WELCOME TO OUR ADVANCED VIDEO EDITING AND CINEMA COURSE !</h4>
 								<p class="text-danger animated-element text-end fs-6 tagline">- BY 100 INTERNATIONAL - SCHOOL OF CREATIVITY -</p>
 								<p class="animated-element course-desc">
-  IF YOU WANT TO EXPRESS YOUR EXPERIENCE ON ANY PLATFORM LIKE YOUTUBE, THIS COURSE IS SPECIALLY DESIGNED FOR YOU !
-</p>
+									IF YOU WANT TO EXPRESS YOUR EXPERIENCE ON ANY PLATFORM LIKE YOUTUBE, THIS COURSE IS SPECIALLY DESIGNED FOR YOU !
+								</p>
 
-<div class="row">
-    <div class="col-12 d-flex align-items-center">
-        <h5 class="animated-element  mr-3 mt-4">Check this Handbook for More details :</h5>
-        <a class="btn btn-outline-light animated-element text-hover-background-swipe-button mt-5" href="#" role="button" onclick="downloadPdf()" style="position: relative; left: 17px;">Download</a>
-    </div>
-</div>
+								<div class="row">
+									<div class="col-12 d-flex align-items-center">
+										<h5 class="animated-element  mr-3 mt-4">Check this Handbook for More details :</h5>
+										<a class="btn btn-outline-light animated-element text-hover-background-swipe-button mt-5" href="#" role="button" onclick="downloadPdf()" style="position: relative; left: 17px;">Download</a>
+									</div>
+								</div>
 
-    <div class="col-12 d-flex justify-content-center">
-        <a class="btn btn-outline-light animated-element text-hover-background-swipe-button" href="course/" role="button">View Course Details -></a>
-    </div>
+								<div class="col-12 d-flex justify-content-center">
+									<a class="btn btn-outline-light animated-element text-hover-background-swipe-button" href="course/" role="button">View Course Details -></a>
+								</div>
 
 							</div>
 						</div>
@@ -317,7 +336,7 @@
 								<div class="row sk__heading-spacer-l">
 									<div class="col-12 col-xl-10 offset-xl-1 text-center">
 										<h1 class="h1-small mb-3 pt-4 pb-1">Our Focus</h1>
-										<p class="p-v2 skills-subhead">AT THE CORE,  <br> <strong class="text-warning">WE MAKE COMPANIES FOR YOUR INNOVATIVE IDEAS</strong> . <br>BUT THE POINT IS  <br><strong class="text-warning">WE SELL HERE OUR CREATIVITY</strong> <br>TO ENTER THE BUSINESS WORLD.</p>
+										<p class="p-v2 skills-subhead">AT THE CORE, <br> <strong class="text-warning">WE MAKE COMPANIES FOR YOUR INNOVATIVE IDEAS</strong> . <br>BUT THE POINT IS <br><strong class="text-warning">WE SELL HERE OUR CREATIVITY</strong> <br>TO ENTER THE BUSINESS WORLD.</p>
 									</div>
 								</div>
 
@@ -412,7 +431,7 @@
 									<br />
 									<!-- <span>info@website.com</span> -->
 								</p>
-							
+
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-3 footer-main-small-col widget_nav_menu">
 								<h5>100 Quick Links</h5>
