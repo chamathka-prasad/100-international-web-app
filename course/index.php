@@ -2,20 +2,18 @@
 <html lang="en-US">
 
 <head>
-
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="description" content="This is DarkStar, see it live now!">
-	<meta name="author" content="Skilltech Web Design">
-	<meta name="keywords" content="DarkStar, dark theme, best dark theme, best dark html, best dark website design, best dark websites, dark web design, best html themes, best html templates, best websites, dark portfolio, dark creative, gsap theme, skilltech, skilltech web design" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="100 International">
+	<meta name="keywords" content="100 Academy, DaVinci Resolve, video editing, color grading, creative thinking, online courses"/>
 
-	<meta property="og:title" content="DarkStar - The Ultimate Dark HTML Template" />
-	<meta property="og:description" content="Superior Dark Multipurpose Theme · $235 Added Value · Stunning Effects & Clean Code · Build a Website Today with DarkStar!" />
-	<meta property="og:image" content="../assets/images/Companyimages/logo.png" />
+	<meta property="og:title" content="100 Academy | 100 International"/>
+	<meta property="og:description" content="Professional video post-production and creative thinking courses. Learn DaVinci Resolve, Fusion, and unlock your creative potential."/>
+	<meta property="og:image" content="../assets/images/Companyimages/logo.png"/>
+	<meta property="og:site_name" content="100 International"/>
 
-	<meta property="og:site_name" content="SkilltechWebDesign.com" />
-
-	<title>100 international | Our Courses</title>
+	<title>100 Academy | 100 International</title>
 
 	<link rel="icon" href="../assets/images/Companyimages/logo.png" type="image/x-icon">
 	<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="../assets/images/apple-touch-icon-72x72-precomposed.png" sizes="72x72" />
@@ -31,7 +29,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@200;300;400;600;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 	<!-- Icon Fonts -->
 	<link href="../assets/vendor/icomoon/icomoon.min.css" rel="stylesheet">
-
+	
 	<!-- Off Canvas Menu - Default Theme -->
 	<link href="../assets/vendor/offcanvas-nav/hc-offcanvas-nav.css" rel="stylesheet" />
 
@@ -50,249 +48,257 @@
 	<link href="../assets/vendor/slick/1.8.1/slick-theme-skilltech.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="../assets/custom/css/style.css" />
+
+	<!-- Navigation and Page Specific Styles -->
 	<style>
-		.product-card {
-			margin: 30px auto;
-
+		/* Custom Navigation Styles (from your custom CSS) */
+		.custom-header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			background: transparent;
+			transition: all 0.3s ease;
 		}
 
-		.details-container {
-			background-color: rgba(0, 0, 0, 0.05);
-			height: 100%;
-			padding: 20px;
+		.custom-nav-links {
 			display: flex;
-			flex-direction: column;
-			justify-content: center;
+			align-items: center;
+			justify-content: flex-end; /* Align to right corner */
+			gap: 2rem;
+			padding: 1rem 2rem; /* Add right padding */
 		}
 
-		.product-image {
-			width: 100%;
-			height: auto;
-			object-fit: cover;
-
-		}
-
-		.buy-button {
-			background-color: #ffc107;
-			border: none;
-			color: #000;
-			font-weight: bold;
-			padding: 10px 0;
-			margin-top: 15px;
-			width: 100%;
-		}
-
-		.buy-button:hover {
-			background-color: #ffca2c;
-			color: #000;
-		}
-
-		.price {
-			font-size: 24px;
-			font-weight: bold;
-		}
-
-		.product-name {
-			font-size: 28px;
-			margin-bottom: 15px;
-		}
-
-		@media (max-width: 767px) {
-			.details-container {
-				margin-top: 15px;
-			}
-		}
-
-		.modal-content {
-			background-color: rgba(30, 30, 30, 0.95);
-			color: #e0e0e0;
-			border: 1px solid #333;
-			box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+		.custom-link {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			padding: 0.5rem 1rem;
+			border-radius: 8px;
+			transition: all 0.3s ease;
 			position: relative;
 			overflow: hidden;
 		}
 
-		.modal-background {
+		.custom-link:hover {
+			color: #ff8f2a;
+			transform: translateY(-2px);
+		}
+
+		.custom-link.gradiendColorAdd {
+			background: linear-gradient(45deg, #ff8f2a, #FFEB3B);
+			color: #000;
+			font-weight: 600;
+		}
+
+		.text-hover-background-swipe::before {
+			content: '';
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: -100%;
 			width: 100%;
 			height: 100%;
-			opacity: 0.4;
-			z-index: 0;
-			background-position: center;
-			background-size: cover;
-			filter: grayscale(30%);
+			background: linear-gradient(90deg, transparent, rgba(255, 143, 42, 0.1), transparent);
+			transition: left 0.5s ease;
+			z-index: -1;
 		}
 
-		.modal-header,
-		.modal-body,
-		.modal-footer {
+		.text-hover-background-swipe:hover::before {
+			left: 100%;
+		}
+
+		.mirror-container {
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background: linear-gradient(90deg, transparent, rgba(255, 143, 42, 0.3), transparent);
+		}
+
+		/* Bootstrap Navbar Styles */
+		.navbar-toggler {
+			border: none;
+			padding: 0.5rem;
+		}
+
+		.navbar-toggler:focus {
+			box-shadow: none;
+		}
+
+		.navbar-collapse {
+			border-radius: 8px;
+			margin-top: 0.5rem;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.navbar-nav .nav-link {
+			color: #fff !important;
+			padding: 0.75rem 1rem;
+			margin: 0.25rem 0;
+			border-radius: 6px;
+			transition: all 0.3s ease;
 			position: relative;
-			z-index: 1;
 		}
 
-		.modal-header {
-			border-bottom: 1px solid #333;
-			background-color: rgba(18, 18, 18, 0.7);
+		.navbar-nav .nav-link:hover {
+			background: rgba(255, 143, 42, 0.1);
+			color: #ff8f2a !important;
+			transform: translateX(5px);
 		}
 
-		.modal-footer {
-			border-top: 1px solid #333;
-			background-color: rgba(18, 18, 18, 0.7);
+		.navbar-nav .nav-link.active {
+			background: rgba(255, 143, 42, 0.2);
+			color: #ff8f2a !important;
+			font-weight: 600;
 		}
 
-		.btn-primary {
-			background-color: #5e35b1;
-			border-color: #5e35b1;
+		/* Hide desktop nav on mobile */
+		@media (max-width: 991px) {
+			.custom-header.d-none.d-md-none.d-lg-block {
+				display: none !important;
+			}
+		}
+
+		/* Project Cards */
+		.project-card {
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 15px;
+			overflow: hidden;
+			transition: transform 0.3s ease;
+			border: 1px solid rgba(255, 143, 42, 0.2);
+		}
+
+		.project-card:hover {
+			transform: translateY(-10px);
+			border-color: #ff8f2a;
+		}
+
+		.project-image {
+			height: 200px;
+			background: linear-gradient(135deg, #ff8f2a, #FFEB3B);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 3rem;
+			color: #000;
+		}
+
+		/* Pricing Cards */
+		.pricing-card {
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 15px;
+			padding: 2rem;
+			text-align: center;
+			transition: all 0.3s ease;
+			border: 2px solid transparent;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.pricing-card:hover {
+			transform: translateY(-10px);
+			border-color: #ff8f2a;
+		}
+
+		.pricing-card.featured {
+			border-color: #ff8f2a;
+			transform: scale(1.05);
+		}
+
+		.pricing-card.featured::before {
+			content: 'POPULAR';
+			position: absolute;
+			top: 20px;
+			right: -30px;
+			background: linear-gradient(45deg, #ff8f2a, #FFEB3B);
+			color: #000;
+			padding: 5px 40px;
+			font-size: 0.8rem;
+			font-weight: bold;
+			transform: rotate(45deg);
+		}
+
+		.pricing-price {
+			font-size: 3rem;
+			font-weight: bold;
+			color: #ff8f2a;
+			margin: 1rem 0;
+		}
+
+		/* Tech Stack Grid */
+		.tech-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+			gap: 1.5rem;
+			margin: 2rem 0;
+		}
+
+		.tech-item {
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 10px;
+			padding: 1.5rem;
+			text-align: center;
 			transition: all 0.3s ease;
 		}
 
-		.btn-primary:hover {
-			background-color: #7c4dff;
-			border-color: #7c4dff;
-			transform: translateY(-2px);
-			box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4);
+		.tech-item:hover {
+			background: rgba(255, 143, 42, 0.1);
+			transform: translateY(-5px);
 		}
 
-		.btn-close {
-			filter: invert(1);
-			z-index: 2;
+		.tech-icon {
+			font-size: 2.5rem;
+			color: #ff8f2a;
+			margin-bottom: 0.5rem;
 		}
 
-		.bank-details {
-			background-color: rgba(37, 37, 37, 0.8);
-			padding: 20px;
-			border-radius: 8px;
-			margin-bottom: 20px;
-			backdrop-filter: blur(5px);
+		/* Responsive Design */
+		@media (max-width: 576px) {
+			.tech-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			
+			.pricing-card.featured {
+				transform: scale(1);
+			}
 		}
-
-		.bank-details h5 {
-			color: #bb86fc;
-			margin-bottom: 15px;
-			font-weight: 600;
-		}
-
-		.detail-item {
-			margin-bottom: 10px;
-			display: flex;
-		}
-
-		.detail-label {
-			font-weight: 600;
-			color: #bb86fc;
-			width: 140px;
-		}
-
-		.contact-details {
-			background-color: rgba(37, 37, 37, 0.8);
-			padding: 20px;
-			border-radius: 8px;
-			backdrop-filter: blur(5px);
-		}
-
-		.contact-item {
-			display: flex;
-			align-items: center;
-			margin-bottom: 10px;
-		}
-
-		.contact-icon {
-			margin-right: 10px;
-			color: #bb86fc;
-		}
-
-		.top-image-container {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			margin-bottom: 20px;
-			position: relative;
-		}
-
-		.top-image-container img {
-			width: 100%;
-			max-height: 200px;
-			object-fit: cover;
-			border-radius: 8px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-		}
-
-		.highlight {
-			color: #cf6679;
-			font-weight: 600;
-		}
-
-		.modal-title {
-			color: #bb86fc;
-			font-weight: 700;
-			letter-spacing: 1px;
-		}
-		.dark-button {
-			z-index: 1;
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-        
-            align-items: center;
-            gap: 8px;
-            transition: background-color 0.3s;
-        }
-        
-        .dark-button:hover {
-            background-color: #555;
-        }
 	</style>
 
 </head>
 
-<body class="sk__elements-hero-slide-show-page dark-shade-1-bg">
+<body class="sk__homepage sk__home-parallax-half-screens dark-shade-1-bg">
 
 	<main id="primary" class="site-main">
-
-		<!-- Master Curtain Effect -->
-		<section class="sk__master-curtain">
-			<div class="mcurtain mcurtain-left"></div>
-			<!-- <div class="mcurtain mcurtain-center"></div> -->
-			<div class="mcurtain mcurtain-right"></div>
-		</section>
 
 		<!-- Back to top button -->
 		<div class="sk__back-to-top-wrap">
 			<a class="sk__back-to-top" href="#smooth-content"><span class="sk__back-to-top"></span></a>
 		</div>
 
-		<!-- Navigation Menu
-		================================================== -->
-
+		<!-- Navigation Menu (Desktop) -->
+		<div class="sk__mobile-menu-bar headerBackkGround overflow-hidden customAnimation" style="z-index: 1;"></div>
 
 		<!-- Dynamically controlled with JS! -->
 		<a class="sk__mobile-main-logo" href="../"><img alt="Website logo." src="../assets/images/Companyimages/logo.png"></a>
-		<!-- Navigation Bar -->
+		
+		<!-- Desktop Navigation Bar (Large Screens) -->
 		<div class="custom-header d-none d-md-none d-lg-block" style="z-index:3;">
-			<div class="custom-nav-links me-5 ">
-				<a class="custom-link text-hover-background-swipe " href="../">Home</a>
-				<a class="custom-link text-hover-background-swipe gradiendColorAdd" href="#">Courses</a>
+			<div class="custom-nav-links me-5">
+				<a class="custom-link text-hover-background-swipe" href="../">Home</a>
+				<a class="custom-link text-hover-background-swipe" href="../course/">Courses</a>
+				<a class="custom-link text-hover-background-swipe" href="../web-development/">Web Development</a>
+				<a class="custom-link text-hover-background-swipe gradiendColorAdd" href="../academy/">Academy</a>
 				<a class="custom-link text-hover-background-swipe" href="../about/">About</a>
 				<a class="custom-link text-hover-background-swipe" href="../companies/">Companies</a>
 				<a class="custom-link text-hover-background-swipe" href="../team/">Team</a>
 				<a class="custom-link text-hover-background-swipe" href="../contact/">Contact</a>
 			</div>
 			<div class="mirror-container"></div>
-
 		</div>
 
-		<div class="sk__mobile-menu-bar headerBackkGround overflow-hidden customAnimation" style="z-index: 1;"></div>
-
-
-		<!-- nav -->
-
+		<!-- Mobile Navigation -->
 		<nav class="navbar navbar-expand-lg bg-body-tertiary d-lg-none d-md-block d-block custom-header">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#"></a>
@@ -301,11 +307,17 @@
 				</button>
 				<div class="collapse navbar-collapse bg-black" id="navbarNavDropdown">
 					<ul class="navbar-nav p-3">
-						<li class="nav-item ">
-							<a class="nav-link active" aria-current="page" href="../">Home</a>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="../">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Courses</a>
+							<a class="nav-link" href="../course/">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../web-development/">Web Development</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="../academy/">Academy</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="../about/">About</a>
@@ -319,21 +331,15 @@
 						<li class="nav-item">
 							<a class="nav-link" href="../contact/">Contact</a>
 						</li>
-
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<!-- nav -->
-
-
 		<div id="smooth-wrapper" class="pushable-content">
 			<div id="smooth-content">
 
-
-				<!-- Hero Section / Hero Slider
-				================================================== -->
+				<!-- Hero Section / Hero Slider -->
 				<section class="sk__hero-section">
 					<!-- Carousel -->
 					<div id="sk__hero-carousel-slider" class="carousel slide dark-shade-1-bg">
@@ -343,344 +349,144 @@
 							<button type="button" data-bs-target="#sk__hero-carousel-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							<button type="button" data-bs-target="#sk__hero-carousel-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
 							<button type="button" data-bs-target="#sk__hero-carousel-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							<button type="button" data-bs-target="#sk__hero-carousel-slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
-							<button type="button" data-bs-target="#sk__hero-carousel-slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
-							<button type="button" data-bs-target="#sk__hero-carousel-slider" data-bs-slide-to="5" aria-label="Slide 6"></button>
-
 						</div>
-
+				
 						<!-- Slides -->
 						<div class="carousel-inner">
 
-							<!-- Slide 1 -->
+							<!-- Slide 1 - DaVinci Resolve Color Grading -->
 							<div class="carousel-item zooming active hero-slide-1 sk__hero-slider-item sk__image-back-cover">
-
 								<section class="sk__parallax-background-section sk__hero-item-theme-style">
-
 									<!-- Parallax background -->
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-none d-md-block" style="background-image: url(../assets/images/Companyimages/courses/smCourse1.jpeg);"></div>
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-block d-md-none" style="background-image: url(../assets/images/Companyimages/courses/mob1.jpg);"></div>
-									<div class="flex-helper-div"></div>
+									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover" style="background-image: url(../assets/images/hero-image-03.webp);"></div>
 
+									<div class="flex-helper-div"></div>
+									
 									<!-- Main hero heading -->
 									<div class="hero-h1-box">
 										<div class="cover-text-wrapper">
-											<h1 class="hero-h1 animated-element phase-1 text-center text-md-start text-white">Advanced<br /> Video Editing<br />And <br />Cinema Course</h1>
-											<button class="">
-												<i class="fas fa-external-link-alt"></i> Open New Tab
-											</button>
-											<a class="btn btn-danger animated-element phase-1 mb-2 " href="#"  onclick="window.open('register', '_blank')" role="button"> <i class="fas fa-external-link-alt"></i>&nbsp;&nbsp; REGISTER</a>
-											<a class="btn btn-primary btn-lg animated-element phase-1 mb-2" data-bs-toggle="modal" data-bs-target="#bankDetailsModal" href="#about-us" role="button"><i class="fas fa-university me-2"></i> View Bank Details</a>
+											<h1 class="hero-h1 animated-element phase-1 text-center text-md-start text-white">DaVinci<br /> Resolve<br /> Color Grading</h1>
 										</div>
 									</div>
 
-
 									<!-- Bottom Left box -->
 									<div class="hero-box-bottom-left text-center text-sm-start">
-
-										<!-- <a class="btn btn-outline-light animated-element phase-1 mb-4 text-hover-background-swipe-button" href="https://sandbox.payhere.lk/pay/o64ac371e" target="_blank" role="button">Enroll</a> -->
-
+										<a class="btn btn-outline-light animated-element phase-1 mb-4" href="#color-grading" role="button">LEARN MORE</a>
+										
 										<div class="cover-text-wrapper">
-											<h3 class="animated-element phase-1 text-center text-sm-start text-white">By <strong>100 international</strong></h3>
+											<h3 class="animated-element phase-1 text-center text-sm-start text-white">PROFESSIONAL <strong>COLOR GRADING</strong></h3>
 										</div>
 
-										<!-- <div class="cover-text-wrapper">
-											<p class="hero-box-p animated-element phase-1 text-center text-sm-start text-white">Salvia vape blue bottle bespoke wolf celiac quinoa cloud bread letterpress hammock photo booth. Palo santo vexillologist venmo shaman pitchfork tote bag.</p>
-										</div> -->
+										<div class="cover-text-wrapper">
+											<p class="hero-box-p animated-element phase-1 text-center text-sm-start text-white">Master the art of color correction and grading using DaVinci Resolve. Perfect for video editors and filmmakers.</p>
+										</div>
 									</div>
 
 									<!-- Bottom Right Box -->
 									<div class="hero-box-bottom-right text-center text-sm-start">
 										<div class="cover-text-wrapper">
-											<span class="big-abbreviated-heading animated-element phase-2 text-white">Project</span>
+											<span class="big-abbreviated-heading animated-element phase-2 text-white">COLOR</span>
 										</div>
-										<!-- <div class="cover-text-wrapper">
-											<p class="animated-element phase-2 text-white">Follow the white rabbit Neo, and you’ll end up in Darkshade</p>
-										</div> -->
 										<div class="cover-text-wrapper">
-											<h4 class="animated-element phase-2 text-white">Professional Video Editors</h4>
+											<p class="animated-element phase-2 text-white">4 Weeks • 9,000 LKR</p>
+										</div>
+										<div class="cover-text-wrapper">
+											<h4 class="animated-element phase-2 text-white">CINEMATIC LOOKS</h4>
 										</div>
 									</div>
-
 								</section>
 							</div>
-							<!-- /.hero-slide-1 -->
 
-
-
-
-							<!-- Slide 4 -->
+							<!-- Slide 2 - DaVinci Resolve Fusion -->
 							<div class="carousel-item zooming hero-slide-2 sk__hero-slider-item sk__image-back-cover">
-								<section class="sk__parallax-background-section sk__hero-item-center-center">
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-none d-md-block" style="background-image: url(../assets/images/Companyimages/courses/smCourse2.jpeg);"></div>
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-block d-md-none" style="background-image: url(../assets/images/Companyimages/courses/mob2.jpg);"></div>
+								<section class="sk__parallax-background-section sk__hero-item-theme-style">
+									<!-- Parallax background -->
+									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover" style="background-image: url(../assets/images/hero-image-13.webp);"></div>
 
-
-
+									<div class="flex-helper-div"></div>
+									
 									<!-- Main hero heading -->
 									<div class="hero-h1-box">
 										<div class="cover-text-wrapper">
-											<h1 class="hero-h1 animated-element phase-1 text-center text-md-start text-white">
-												MASTETR IN <br><span class="text-warning">DAVINCI RESOLVE</span>, <br><span class="text-warning">ADOBE PRIMERE</span> WITH <br><span class="text-warning">AFTER EFFECTS</span> ANIMATIONS
-											</h1>
+											<h1 class="hero-h1 animated-element phase-1 text-center text-md-start text-white">DaVinci<br /> Resolve<br /> Fusion</h1>
 										</div>
 									</div>
 
+									<!-- Bottom Left box -->
+									<div class="hero-box-bottom-left text-center text-sm-start">
+										<a class="btn btn-outline-light animated-element phase-1 mb-4" href="#fusion" role="button">EXPLORE VFX</a>
+										
+										<div class="cover-text-wrapper">
+											<h3 class="animated-element phase-1 text-center text-sm-start text-white">VISUAL EFFECTS & <strong>MOTION GRAPHICS</strong></h3>
+										</div>
 
+										<div class="cover-text-wrapper">
+											<p class="hero-box-p animated-element phase-1 text-center text-sm-start text-white">Learn advanced VFX and motion graphics with Fusion inside DaVinci Resolve. Perfect for motion designers.</p>
+										</div>
+									</div>
 
+									<!-- Bottom Right Box -->
+									<div class="hero-box-bottom-right text-center text-sm-start">
+										<div class="cover-text-wrapper">
+											<span class="big-abbreviated-heading animated-element phase-2 text-white">VFX</span>
+										</div>
+										<div class="cover-text-wrapper">
+											<p class="animated-element phase-2 text-white">6 Weeks • 15,000 LKR</p>
+										</div>
+										<div class="cover-text-wrapper">
+											<h4 class="animated-element phase-2 text-white">NODE COMPOSITING</h4>
+										</div>
+									</div>
 								</section>
 							</div>
-							<!-- /.hero-slide-4 -->
 
-
-
+							<!-- Slide 3 - Creative Thinking -->
 							<div class="carousel-item zooming hero-slide-3 sk__hero-slider-item sk__image-back-cover">
-								<section class="sk__parallax-background-section sk__hero-item-center-center">
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-none d-md-block" style="background-image: url(../assets/images/Companyimages/courses/smCourse3.jpeg);"></div>
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-block d-md-none" style="background-image: url(../assets/images/Companyimages/courses/mob3.jpg);"></div>
-
-									<!-- Hero content -->
-									<div class="mb-2 text-center">
-										<span class="animated-element phase-1"></span>
-										<span class="animated-element phase-1"></span>
-										<div class="cover-text-wrapper">
-											<h1 class="hero-h1 animated-element phase-1">PROFESSIONAL SKILL SET IN 1 MONTHS</h1>
-										</div>
-
-										<div class="cover-text-wrapper">
-											<!-- <a class="btn btn-lg btn-outline-light animated-element phase-1" href="#" role="button">SOME LINK -></a> -->
-										</div>
+								<section class="sk__video-background-section sk__hero-item-theme-style">
+									<div class="sk__video-container sk__parallax-hero-video sk__absolute sk__image-back-cover">
+										<div class="sk__pattern-overlay" style="opacity: 37%;"></div>
+										<div class="sk__absolute sk__gradient-back-v1" style="opacity: 0;"></div>
+										<video class="sk__video" preload="none" poster="../assets/video/hero-video-main.webp" autoplay="" loop="" muted="" playsinline="">
+											<source src="../assets/video/hero-video-main.mp4" type="video/mp4">Your browser does not support HTML5 video.
+										</video>
 									</div>
 
-								</section>
-							</div>
-
-
-
-							<div class="carousel-item zooming hero-slide-4 sk__hero-slider-item sk__image-back-cover">
-								<section class="sk__parallax-background-section sk__hero-item-center-center">
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-none d-md-block" style="background-image: url(../assets/images/Companyimages/courses/smCourse4.jpeg);"></div>
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-block d-md-none" style="background-image: url(../assets/images/Companyimages/courses/mob4.jpg);"></div>
-
-									<!-- Hero content -->
-									<div class="mb-2 text-center">
-										<span class="animated-element phase-1"></span>
-										<span class="animated-element phase-1"></span>
-										<div class="cover-text-wrapper">
-											<h1 class="hero-h1 animated-element phase-1">BY NEXT LEVEL VIDEO EDITORS IN INDUSTRY</h1>
-
-										</div>
-
-										<div class="cover-text-wrapper">
-											<a class="btn btn-outline-light animated-element phase-1 mb-4 text-hover-background-swipe-button" href="#" onclick="downloadPdf()" target="_blank" role="button">Check this Handbook for More details</a>
-										</div>
-
-
-									</div>
-
-								</section>
-							</div>
-
-							<div class="carousel-item zooming hero-slide-5 sk__hero-slider-item sk__image-back-cover">
-								<section class="sk__parallax-background-section sk__hero-item-center-center">
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-none d-md-block" style="background-image: url(../assets/images/Companyimages/courses/smCourse5.jpeg);"></div>
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-block d-md-none" style="background-image: url(../assets/images/Companyimages/courses/mob5.jpg);"></div>
-
-									<!-- Hero content -->
-									<!-- Hero content -->
-									<div class="mb-2 text-center">
-										<span class="animated-element phase-1"></span>
-										<span class="animated-element phase-1"></span>
-										<div class="cover-text-wrapper">
-											<h1 class="hero-h1 animated-element phase-1">REGISTER NOW ! <br> <br>
-												BE <span class="text-warning">CINEMATIC !</span></h1>
-										</div>
-
-										<div class="cover-text-wrapper">
-											<!-- <a class="btn btn-lg btn-outline-light animated-element phase-1" href="#" role="button">SOME LINK -></a> -->
-										</div>
-									</div>
-
-								</section>
-							</div>
-
-
-							<div class="carousel-item zooming hero-slide-6 sk__hero-slider-item sk__image-back-cover">
-								<section class="sk__parallax-background-section sk__hero-item-center-center">
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-none d-md-block" style="background-image: url(../assets/images/Companyimages/courses/paymentBack.jpg);"></div>
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover d-block d-md-none" style="background-image: url(../assets/images/Companyimages/courses/paymentBack.jpg);"></div>
-
-									<!-- Hero content -->
-									<div class="mb-2">
-										<span class="animated-element phase-1"></span>
-										<span class="animated-element phase-1"></span>
-
-										<div class="product-card animated-element phase-1">
-											<div class="row">
-												<!-- On mobile, this column will appear second -->
-												<div class="col-lg-12 col-xl-6 order-xl-1 order-lg-2">
-													<div class="details-container">
-														<h1 class="product-name text-center text-warning" style="font-size: xx-large;">ONLY</h1>
-														<p class="price text-center text-warning">9000 LKR</p>
-														<p class="description">This price is very affordable for any person who willing to be a professional. The Course is providing top-notch training at an affordable price. Additionally, it serves as your pathway to join an exclusive Advanced Internship Program with the globally recognized company, 100 International.
-														</p>
-														<ul>
-
-														</ul>
-													</div>
-												</div>
-												<!-- On mobile, this column will appear first -->
-												<div class="col-lg-12 col-xl-6 order-xl-2 order-lg-1 " style="background-image: url(../assets/images/Companyimages/courses/courseCover.jpg);background-size: contain;background-repeat: no-repeat;height:200px">
-
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-12 text-center">
-													<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#bankDetailsModal">
-														<i class="fas fa-university me-2"></i> View Bank Details
-													</button>
-													<!-- <button class="btn buy-button btn-warning">BUY NOW</button> -->
-												</div>
-											</div>
-										</div>
-										<!-- <div class="cover-text-wrapper">
-											<h1 class="hero-h1 animated-element phase-1 fs-1">
-												REGISTER NOW ! <br> <span class="fs-3">AND YOU CAN PAY COURSE FEE BEFORE STARTING</span>
-												<br> <span class="text-warning fs-3">DATE 1 <sup>st</sup> OF APRIL 2025</span> <br>
-											</h1>
-
-											<h1 class="hero-h1 animated-element phase-1 text-danger">
-
-												REGISTRATION FEE RS. 1000/=<br>
-												COURSE FEE RS. 9000/=</h1>
-
-										</div> -->
-
-
-										<!-- <div class="cover-text-wrapper">
-
-											<p class="animated-element phase-1 fs-6 fw-bold text-black text-center" style="background-color:rgba(239, 242, 253, 0.47);">
-												<strong>BANK TRANSFER</strong><br><br>
-												ACCOUNT NO: 0086018840<br>
-												MISS I H KALUPAHANA<br>
-												HASARA 1ST LANE,
-												WELIPITIMODARA,
-												GINTOTA 80280<br>
-												BOC<br>
-												BRANCH CODE/NAME: 089 GALLE CITY<br>
-												CURRENCY: LKR <br><br>
-												<strong>CONTACT </strong>
-												<br>
-												+94 76 368 7242 - Iruni Kalupahana (Director of Internationals) -->
-										<!-- <strong>OPTION 2-</strong> -->
-										<!-- <img src="../assets/images/Companyimages/courses/bank.jpeg" style="height:200px;" alt=""> -->
-
-										<!-- </p> -->
-										<!-- <a class="btn btn-outline-light animated-element phase-1 mb-4 text-hover-background-swipe-button" href="https://sandbox.payhere.lk/pay/o64ac371e" target="_blank" role="button">Purchase The Course Through The Payment Gateway</a> -->
-										<!-- </div> -->
-									</div>
-
-								</section>
-							</div>
-
-
-
-							<!-- Modal -->
-							<div class="modal fade" id="bankDetailsModal" tabindex="-1" aria-labelledby="bankDetailsModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<!-- Background image (forest) -->
-										<div class="modal-background" style="background-image: url('../assets/images/Companyimages/courses/paymentBack.jpg');"></div>
-
-										<div class="modal-header">
-											<h5 class="modal-title" id="bankDetailsModalLabel">BANK TRANSFER DETAILS</h5>
-											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-										</div>
-										<div class="modal-body">
-											<!-- Top image (lion) -->
-											<div class="top-image-container">
-												<img src="../assets/images/Companyimages/courses/courseCover.jpg" alt="Lion" class="img-fluid">
-											</div>
-
-											<div class="bank-details">
-												<h5><i class="fas fa-university me-2"></i>BANK INFORMATION</h5>
-												<div class="detail-item">
-													<span class="detail-label">ACCOUNT NO:</span>
-													<span class="detail-value">0086018840</span>
-												</div>
-												<div class="detail-item">
-													<span class="detail-label">ACCOUNT NAME:</span>
-													<span class="detail-value">I H KALUPAHANA</span>
-												</div>
-												<div class="detail-item">
-													<span class="detail-label">ADDRESS:</span>
-													<span class="detail-value">HASARA 1ST LANE, WELIPITIMODARA, GINTOTA 80280</span>
-												</div>
-												<div class="detail-item">
-													<span class="detail-label">BANK:</span>
-													<span class="detail-value">BOC</span>
-												</div>
-												<div class="detail-item">
-													<span class="detail-label">BRANCH:</span>
-													<span class="detail-value">089 GALLE CITY</span>
-												</div>
-												<div class="detail-item">
-													<span class="detail-label">CURRENCY:</span>
-													<span class="detail-value">LKR</span>
-												</div>
-												<div class="detail-item">
-												<img src="../assets/images/Companyimages/courses/bank.jpeg"  alt="">
-												</div>
-											</div>
-
-											<div class="contact-details">
-												<h5><i class="fas fa-phone-alt me-2"></i>CONTACT INFORMATION (Mobile And Whatsapp)</h5>
-												<div class="contact-item">
-													<span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
-													<span><span class="highlight">078 133 16 44</span> - Mayura Athukorala / Chief Executive Officer (CEO)</span>
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-
-
-
-
-							<!-- Slide 4 -->
-							<!-- <div class="carousel-item zooming hero-slide-7 sk__hero-slider-item sk__image-back-cover">
-								<section class="sk__parallax-background-section sk__hero-item-center-center">
-									<div class="sk__parallax-background-element sk__absolute sk__image-back-cover" style="background-image: url(assets/images/hero-image-09.webp);"></div>
-
+									<div class="flex-helper-div"></div>
 									
-									<div class="mb-2 text-center">
-										<span class="animated-element phase-1"></span>
-										<span class="animated-element phase-1"></span>
+									<!-- Main hero heading -->
+									<div class="hero-h1-box">
 										<div class="cover-text-wrapper">
-											<h1 class="hero-h1 animated-element phase-1">Start Exploring Dark&#8198;star</h1>
+											<h1 class="hero-h1 animated-element phase-1 text-center text-md-start text-white">Creative<br /> Thinking<br /> Mastery</h1>
 										</div>
-										<div class="cover-text-wrapper">
-											<h2 class="h2-regular thin animated-element phase-1">Salvia vape blue bottle bespoke wolf celiac quinoa cloud bread letterpress hammock.</h2>
-										</div>
-										<div class="cover-text-wrapper">
-											<a class="btn btn-lg btn-outline-light animated-element phase-1" href="#" role="button">SOME LINK -></a>
-										</div>
-
-
 									</div>
 
+									<!-- Bottom Left box -->
+									<div class="hero-box-bottom-left text-center text-sm-start">
+										<a class="btn btn-outline-light animated-element phase-1 mb-4" href="#creative-thinking" role="button">UNLOCK CREATIVITY</a>
+										
+										<div class="cover-text-wrapper">
+											<h3 class="animated-element phase-1 text-center text-sm-start text-white">INNOVATIVE <strong>PROBLEM SOLVING</strong></h3>
+										</div>
+
+										<div class="cover-text-wrapper">
+											<p class="hero-box-p animated-element phase-1 text-center text-sm-start text-white">Develop creative thinking skills and learn to solve problems innovatively. Perfect for anyone looking to boost creativity.</p>
+										</div>
+									</div>
+
+									<!-- Bottom Right Box -->
+									<div class="hero-box-bottom-right text-center text-sm-start">
+										<div class="cover-text-wrapper">
+											<span class="big-abbreviated-heading animated-element phase-2 text-white">MIND</span>
+										</div>
+										<div class="cover-text-wrapper">
+											<p class="animated-element phase-2 text-white">3 Weeks • 6,000 LKR</p>
+										</div>
+										<div class="cover-text-wrapper">
+											<h4 class="animated-element phase-2 text-white">IDEA GENERATION</h4>
+										</div>
+									</div>
 								</section>
-							</div> -->
-							<!-- /.hero-slide-4 -->
-
-
+							</div>
 
 						</div>
 
@@ -695,62 +501,514 @@
 						</button>
 
 					</div>
-					<!-- /#sk__hero-carousel-slider -->
 				</section>
-				<!-- /.sk__hero-section -->
-
-
-
+				
 				<section class="sk__parallax-background-section sk__parallax-fixer-section sk__parallax-fixer-ignore-height overflow-hidden" style="max-height: 0;">
 					<div class="sk__parallax-background-element"></div>
 				</section>
 
-
-				<!-- Footer
-				================================================== -->
-				<footer class="sk__footer-simple dark-shade-2-bg position-relative">
-
-					<div class="footer-background-container sk__absolute">
-						<div class="sk__gradient-background-tint footer-background sk__absolute"></div>
+				<!-- Half-screen Parallax Section - Color Grading -->
+				<section id="color-grading" class="sk__halfscreen-section">
+					<div class="container-fluid">
+						<div class="row">
+							<!-- Half-screen parallax image (left) -->
+							<div class="col-12 col-xl-6 sk__halfscreen-parallax-image-col sk__parallax-container">
+								<img class="sk__parallax-element-3" alt="DaVinci Resolve Color Grading" src="../assets/images/halfscreen-parallax-img-1.webp">
+							</div>
+							<!-- Half-screen text (right) -->
+							<div class="col-12 col-xl-6 sk__halfscreen-text-col sk__flex-center-y text-center text-lg-start">
+								<div class="sk__halfscreen-text-col-inner">
+									<div class="cover-text-wrapper">
+										<div class="fancy-gradient-text-box reveal-onscroll">
+											<h3 class="h3-elegant sk__gradient-fancy-text">DaVinci Resolve - Color Grading</h3>
+										</div>
+									</div>
+									<h5 class="animated-element mw-660">Master professional color correction and grading</h5>
+									<p class="animated-element mw-560">Learn the art of color correction and grading using DaVinci Resolve. Perfect for video editors, filmmakers, YouTubers, and content creators who want to create cinematic looks.</p>
+									<div class="row mt-4">
+										<div class="col-6">
+											<h6>Key Skills:</h6>
+											<ul class="list-unstyled">
+												<li>• Color Correction</li>
+												<li>• Primary Wheels & Curves</li>
+												<li>• Skin Tone Adjustments</li>
+												<li>• LUTs & Cinematic Looks</li>
+											</ul>
+										</div>
+										<div class="col-6">
+											<h6>Course Details:</h6>
+											<ul class="list-unstyled">
+												<li>• Duration: 4 weeks</li>
+												<li>• Price: 9,000 LKR (~$30)</li>
+												<li>• Online Learning</li>
+												<li>• Certificate Included</li>
+											</ul>
+										</div>
+									</div>
+									<a class="animated-element btn btn-outline-light mt-3" href="../contact/" role="button">ENROLL NOW -></a>
+								</div>
+							</div>
+						</div>	
 					</div>
+				</section>
 
-					<div class="container sk__supercontainer position-relative">
+				<!-- Half-screen Parallax Section - Fusion -->
+				<section id="fusion" class="sk__halfscreen-section">
+					<div class="container-fluid">
+						<div class="row">
+							<!-- Half-screen parallax image (right) -->
+							<div class="order-xl-2 col-12 col-xl-6 sk__halfscreen-parallax-image-col sk__parallax-container">
+								<img class="sk__parallax-element-3" alt="DaVinci Resolve Fusion" src="../assets/images/halfscreen-parallax-img-2.webp">
+							</div>
+							<!-- Half-screen text (left) -->
+							<div class="order-xl-1 col-12 col-xl-6 sk__halfscreen-text-col sk__flex-center-y text-center text-lg-start">
+								<div class="sk__halfscreen-text-col-inner">
+									<div class="cover-text-wrapper">
+										<div class="fancy-gradient-text-box reveal-onscroll">
+											<h3 class="h3-elegant sk__gradient-fancy-text">DaVinci Resolve - Fusion</h3>
+										</div>
+									</div>
+									<h5 class="animated-element mw-660">Advanced VFX and motion graphics mastery</h5>
+									<p class="animated-element mw-560">Learn visual effects and motion graphics with Fusion inside DaVinci Resolve. Perfect for VFX artists, motion designers, and editors wanting to enhance their visual storytelling.</p>
+									<div class="row mt-4">
+										<div class="col-6">
+											<h6>Key Skills:</h6>
+											<ul class="list-unstyled">
+												<li>• Node Compositing</li>
+												<li>• Tracking & Stabilizing</li>
+												<li>• Rotoscoping & Keying</li>
+												<li>• Animations & OpenFX</li>
+											</ul>
+										</div>
+										<div class="col-6">
+											<h6>Course Details:</h6>
+											<ul class="list-unstyled">
+												<li>• Duration: 6 weeks</li>
+												<li>• Price: 15,000 LKR (~$50)</li>
+												<li>• Advanced Level</li>
+												<li>• Portfolio Projects</li>
+											</ul>
+										</div>
+									</div>
+									<a class="animated-element btn btn-outline-light mt-3" href="../contact/" role="button">START LEARNING -></a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</section>
 
-						<div class="row footer-bottom">
-							<div class="col-xs-12 col-sm-6 col-md-4 text-center text-sm-start">
-								<h5>We Are 100</h5>
+				<!-- Half-screen Parallax Section - Creative Thinking -->
+				<section id="creative-thinking" class="sk__halfscreen-section">
+					<div class="container-fluid">
+						<div class="row">
+							<!-- Half-screen parallax image (left) -->
+							<div class="col-12 col-xl-6 sk__halfscreen-parallax-image-col sk__parallax-container">
+								<img class="sk__parallax-element-3" alt="Creative Thinking Course" src="../assets/images/halfscreen-parallax-img-3.webp">
 							</div>
-							<div class="col-12 col-md-4 order-xs-3 order-sm-3 order-md-2 text-center text-sm-start text-md-center">
-								<p class="p-footer-copyright">Copyright © 2025 100-international</p>
+							<!-- Half-screen text (right) -->
+							<div class="col-12 col-xl-6 sk__halfscreen-text-col sk__flex-center-y text-center text-lg-start">
+								<div class="sk__halfscreen-text-col-inner">
+									<div class="cover-text-wrapper">
+										<div class="fancy-gradient-text-box reveal-onscroll">
+											<h3 class="h3-elegant sk__gradient-fancy-text">100 Beautiful Minds - Creative Thinking</h3>
+										</div>
+									</div>
+									<h5 class="animated-element mw-660">Unlock your creative potential and innovative thinking</h5>
+									<p class="animated-element mw-560">Develop your creative thinking skills and learn how to solve problems innovatively. Perfect for anyone interested in boosting creative problem-solving skills.</p>
+									<div class="row mt-4">
+										<div class="col-6">
+											<h6>Key Skills:</h6>
+											<ul class="list-unstyled">
+												<li>• Idea Generation</li>
+												<li>• Creative Blocks</li>
+												<li>• Problem Solving</li>
+												<li>• Innovation Techniques</li>
+											</ul>
+										</div>
+										<div class="col-6">
+											<h6>Course Details:</h6>
+											<ul class="list-unstyled">
+												<li>• Duration: 3 weeks</li>
+												<li>• Price: 6,000 LKR (~$20)</li>
+												<li>• All Skill Levels</li>
+												<li>• Practical Exercises</li>
+											</ul>
+										</div>
+									</div>
+									<a class="animated-element btn btn-outline-light mt-3" href="../contact/" role="button">JOIN COURSE -></a>
+								</div>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4 order-sm-2 order-md-3 text-center text-sm-end">
-								<a class="footer-bottom-right-links" href="#" target="_blank">Privacy</a>
-								<a class="footer-bottom-right-links" href="#" target="_blank">Terms</a>
-								<a class="footer-bottom-right-links" href="#" target="_blank">Contact</a>
+						</div>	
+					</div>
+				</section>
+
+				<!-- Mentor & Success Stories Section -->
+				<section class="sk__py-l dark-shade-3-bg">
+					<div class="container sk__supercontainer">
+						<div class="row text-center">
+							<div class="col sk__heading-spacer-l">
+								<h2 class="h2-super">Our Mentor & Success Stories</h2>
+								<p class="p-super">Learn from industry professionals and join our successful graduates</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="project-card">
+									<div class="project-image">
+										<i class="icon-user"></i>
+									</div>
+									<div class="p-4">
+										<h5>Mayura Athukorala</h5>
+										<p><strong>CEO and Production Head</strong></p>
+										<p>Mathematician and Professional Level Mentor at 100 International. Mayura leads the courses with deep expertise in creative production.</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="badge bg-primary">Expert Mentor</span>
+											<small class="text-muted">100 International</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="project-card">
+									<div class="project-image">
+										<i class="icon-video-camera"></i>
+									</div>
+									<div class="p-4">
+										<h5>Anura K. - Film Colorist</h5>
+										<p><strong>Success Story:</strong> DaVinci Resolve Course</p>
+										<p>"Thanks to 100 Academy's DaVinci Resolve course, I landed my first job as a colorist in a film studio."</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="badge bg-success">Graduate</span>
+											<small class="text-muted">2024</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="project-card">
+									<div class="project-image">
+										<i class="icon-magic-wand"></i>
+									</div>
+									<div class="p-4">
+										<h5>Samantha P. - Motion Designer</h5>
+										<p><strong>Success Story:</strong> Fusion Course</p>
+										<p>"The Fusion course helped me create stunning animations that boosted my freelance business."</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="badge bg-warning">Graduate</span>
+											<small class="text-muted">2024</small>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="project-card">
+									<div class="project-image">
+										<i class="icon-bulb"></i>
+									</div>
+									<div class="p-4">
+										<h5>Ruwan M. - Creative Director</h5>
+										<p><strong>Success Story:</strong> Creative Thinking Course</p>
+										<p>"The Creative Thinking course expanded my ideas and gave me confidence to pitch unique projects at work."</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="badge bg-info">Graduate</span>
+											<small class="text-muted">2024</small>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+				</section>
 
+				<!-- Academy Features Section -->
+				<section class="sk__py-l dark-shade-2-bg">
+					<div class="container sk__supercontainer">
+						<div class="row text-center">
+							<div class="col sk__heading-spacer-l">
+								<h2 class="h2-super">Why Choose 100 Academy?</h2>
+								<p class="p-super">Professional features that set us apart from other online academies</p>
+							</div>
+						</div>
+						
+						<div class="row mb-5">
+							<div class="col-12">
+								<h4 class="text-center mb-4">Learning Features</h4>
+								<div class="tech-grid">
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-users"></i></div>
+										<h6>Expert Instructors</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-laptop1"></i></div>
+										<h6>Flexible Learning</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-tools"></i></div>
+										<h6>Practical Skills</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-globe"></i></div>
+										<h6>Global Community</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-award"></i></div>
+										<h6>Certificates</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-infinity"></i></div>
+										<h6>Lifetime Access</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12">
+								<h4 class="text-center mb-4">Course Tools & Software</h4>
+								<div class="tech-grid">
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-video-camera"></i></div>
+										<h6>DaVinci Resolve</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-magic-wand"></i></div>
+										<h6>Fusion VFX</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-palette"></i></div>
+										<h6>Color Grading</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-layers"></i></div>
+										<h6>Compositing</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-bulb"></i></div>
+										<h6>Creative Tools</h6>
+									</div>
+									<div class="tech-item">
+										<div class="tech-icon"><i class="icon-play"></i></div>
+										<h6>Motion Graphics</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Course Pricing Section -->
+				<section class="sk__py-l dark-shade-3-bg">
+					<div class="container sk__supercontainer">
+						<div class="row text-center">
+							<div class="col sk__heading-spacer-l">
+								<h2 class="h2-super">Academy Course Packages</h2>
+								<p class="p-super">Transparent pricing for professional video post-production education</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="pricing-card">
+									<h4>Color Grading</h4>
+									<div class="pricing-price">9,000 LKR</div>
+									<p class="text-muted mb-3">~$30 USD</p>
+									<ul class="list-unstyled mb-4">
+										<li>✓ 4 Weeks Duration</li>
+										<li>✓ Color Correction</li>
+										<li>✓ Primary Wheels & Curves</li>
+										<li>✓ Skin Tone Adjustments</li>
+										<li>✓ LUTs & Cinematic Looks</li>
+										<li>✓ Certificate Included</li>
+									</ul>
+									<a href="../contact/" class="btn btn-outline-light">Enroll Now</a>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="pricing-card featured">
+									<h4>Fusion VFX</h4>
+									<div class="pricing-price">15,000 LKR</div>
+									<p class="text-muted mb-3">~$50 USD</p>
+									<ul class="list-unstyled mb-4">
+										<li>✓ 6 Weeks Duration</li>
+										<li>✓ Node Compositing</li>
+										<li>✓ Tracking & Stabilizing</li>
+										<li>✓ Rotoscoping & Keying</li>
+										<li>✓ Animations & OpenFX</li>
+										<li>✓ Portfolio Projects</li>
+									</ul>
+									<a href="../contact/" class="btn btn-primary">Start Learning</a>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="pricing-card">
+									<h4>Creative Thinking</h4>
+									<div class="pricing-price">6,000 LKR</div>
+									<p class="text-muted mb-3">~$20 USD</p>
+									<ul class="list-unstyled mb-4">
+										<li>✓ 3 Weeks Duration</li>
+										<li>✓ Idea Generation</li>
+										<li>✓ Creative Problem Solving</li>
+										<li>✓ Innovation Techniques</li>
+										<li>✓ Practical Exercises</li>
+										<li>✓ Lifetime Access</li>
+									</ul>
+									<a href="../contact/" class="btn btn-outline-light">Join Course</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 text-center">
+								<p class="p-large mt-4">All courses include certificates and lifetime access to materials. <a href="../contact/" class="text-primary">Contact us</a> for bundle discounts.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Certificates Section -->
+				<section class="sk__py-l dark-shade-2-bg">
+					<div class="container sk__supercontainer">
+						<div class="row text-center">
+							<div class="col sk__heading-spacer-l">
+								<h2 class="h2-super">View Sample Certificates</h2>
+								<p class="p-super">Professional certificates awarded upon successful course completion</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="project-card">
+									<div class="project-image">
+										<i class="icon-award"></i>
+									</div>
+									<div class="p-4">
+										<h5>Color Grading Certificate</h5>
+										<p><strong>DaVinci Resolve Certified</strong></p>
+										<p>Professional certification in color correction and grading techniques using DaVinci Resolve Studio.</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="badge bg-primary">Verifiable</span>
+											<a href="#" class="btn btn-sm btn-outline-light">View Sample</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="project-card">
+									<div class="project-image">
+										<i class="icon-award"></i>
+									</div>
+									<div class="p-4">
+										<h5>Fusion VFX Certificate</h5>
+										<p><strong>Advanced Compositing</strong></p>
+										<p>Advanced certification in VFX and motion graphics using Fusion inside DaVinci Resolve.</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="badge bg-success">Verifiable</span>
+											<a href="#" class="btn btn-sm btn-outline-light">View Sample</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 mb-4">
+								<div class="project-card">
+									<div class="project-image">
+										<i class="icon-award"></i>
+									</div>
+									<div class="p-4">
+										<h5>Creative Thinking Certificate</h5>
+										<p><strong>Innovation & Problem Solving</strong></p>
+										<p>Certificate in innovative problem-solving and creative thinking methodologies.</p>
+										<div class="d-flex justify-content-between align-items-center">
+											<span class="badge bg-warning">Verifiable</span>
+											<a href="#" class="btn btn-sm btn-outline-light">View Sample</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- CTA Section -->
+				<section class="sk__cta-warp position-relative sk__image-back-cover">
+					<div class="container sk__powercontainer">
+						<div class="row">
+							<div class="col text-center">
+								<div class="sk__warped-text-wrapper sk__flex-center">
+									<span class="sk__warped-text">START LEARNING</span>
+								</div>
+								<h3><strong>ENROLL IN 100 ACADEMY TODAY</strong></h3>
+								<a class="btn btn-lg btn-outline-light sk__warped-button" href="../contact/" role="button">ENROLL NOW -></a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<footer class="dark-shade-2-bg position-relative">
+					<div class="footer-background-container sk__absolute">
+						<div class="sk__gradient-background-tint footer-background sk__absolute"></div>
+					</div>
+					
+					<div class="container sk__supercontainer position-relative">
+						<div class="row footer-top">
+							<div class="col-12 col-sm-6 top-footer-logo">
+								<img src="../assets/images/Companyimages/logo.png" alt="Website logo for the footer.">
+							</div>
+							<div class="col-12 col-sm-6 top-footer-tagline">
+								<h5 class="h5-elegant">EXCELLENCE IN <strong>EDUCATION</strong></h5>
+							</div>
+						</div>
+
+						<span class="divider sk__subtle-divider"></span>
+
+						<div class="row footer-main text-center text-sm-start">
+							<div class="col-md-12 col-lg-6 footer-main-large-col mb-4 mb-lg-0">
+								<div class="fancy-gradient-text-box">
+									<h3 class="h3-elegant sk__gradient-fancy-text">Transform your creative skills.</h3>
+								</div>	
+								<p class="p-v2 mw-440">Professional video post-production and creative thinking courses that unlock your creative potential and drive career growth.</p>
+							</div>
+							<div class="col-md-6 col-lg-3 footer-main-small-col mb-4 mb-md-0">
+								<h5 class="h5-elegant">Courses</h5>
+								<ul class="footer-list">
+									<li><a href="../contact/">Color Grading</a></li>
+									<li><a href="../contact/">Fusion VFX</a></li>
+									<li><a href="../contact/">Creative Thinking</a></li>
+									<li><a href="../contact/">View Certificates</a></li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-lg-3 footer-main-small-col">
+								<h5 class="h5-elegant">Support</h5>
+								<ul class="footer-list">
+									<li><a href="../contact/">Enroll Now</a></li>
+									<li><a href="../contact/">Student Support</a></li>
+									<li><a href="../about/">About Academy</a></li>
+									<li><a href="../team/">Our Mentors</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<span class="divider sk__subtle-divider"></span>
+
+						<div class="row footer-bottom">
+							<div class="col-12 col-sm-6 footer-bottom-left">
+								<p class="p-small">&copy; 2025 100 Academy by 100 International. All rights reserved.</p>
+							</div>
+							<div class="col-12 col-sm-6 footer-bottom-right">
+								<div class="footer-socials">
+									<a class="social-icons" href="#" target="_blank"><span><span class="icon-facebook1"></span></span></a>
+									<a class="social-icons" href="#" target="_blank"><span><span class="icon-twitter1"></span></span></a>
+									<a class="social-icons" href="#" target="_blank"><span><span class="icon-linkedin1"></span></span></a>
+									<a class="social-icons" href="#" target="_blank"><span><span class="icon-instagram1"></span></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</footer>
 
-
-				<!-- Helper div for inserting before scripts
-				================================================== -->
-				<div class="sk__body-end"></div>
-
 			</div>
-			<!-- /#smooth-content -->
-
 		</div>
-		<!-- /#smooth-wrapper -->
 
 	</main>
-	<!-- /main#primary.site-main -->
 
-
-	<!-- Scripts / Body End
-	================================================== -->
-	<!-- Vendor Scripts -->
+	<!-- Scripts -->
 	<script src="../assets/vendor/bootstrap/5.1.3/bootstrap.min.js"></script>
 	<script src="../assets/vendor/offcanvas-nav/hc-offcanvas-nav.js"></script>
 	<script src="../assets/vendor/greensock/gsap.min.js"></script>
@@ -759,43 +1017,70 @@
 	<script src="../assets/vendor/greensock/ScrollToPlugin.min.js"></script>
 	<script src="../assets/vendor/slick/1.8.1/slick.min.js"></script>
 	<script src="../assets/vendor/parallax/3.1.0/parallax.min.js"></script>
-
-	<!-- Font Awesome for icons -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-	<!-- Delivery Form Scripts -->
-	<!-- <script src="assets/vendor/simple-forms/js/simple-forms-translations.js"></script> -->
-	<!-- <script src="assets/vendor/simple-forms/js/simple-forms.min.js"></script> -->
-	<!-- <script src="assets/js/form.js"></script> -->
-
-	<!-- Main Theme JS File -->
+	<script src="../assets/js/youtube-video.js"></script>
 	<script src="../assets/js/theme.js"></script>
+	<script src="../assets/vendor/spectrum/spectrum.min.js"></script>
+	<script src="../assets/vendor/clipboard/clipboard.min.js"></script>
+	<script src="../assets/js/theme-preview-only.js"></script>
 
-
-
-	<!-- Theme Preview Only CSS -->
-	<link href="../assets/vendor/spectrum/spectrum.min.css" rel="stylesheet">
-	<script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
-
-	<script src="../assets/custom/js/script.js"></script>
+	<!-- Custom Navigation Scripts -->
 	<script>
-		function downloadPdf() {
-			const pdfUrl = 'https://www.100-international.com/Project_100_Professional_Editors.pdf';
+		// Smooth Scrolling for Anchor Links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
 
-			// Create an anchor element
-			const anchor = document.createElement('a');
-			anchor.href = pdfUrl;
+		// Auto-close Bootstrap navbar when clicking on nav links
+		document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+			link.addEventListener('click', () => {
+				const navbarCollapse = document.querySelector('.navbar-collapse');
+				if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+					const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+					if (bsCollapse) {
+						bsCollapse.hide();
+					}
+				}
+			});
+		});
 
-			// Set the download attribute to suggest a filename
-			anchor.download = 'file.pdf';
+		// Custom link hover effects (for desktop navigation)
+		document.querySelectorAll('.custom-link').forEach(link => {
+			link.addEventListener('mouseenter', function() {
+				if (!this.classList.contains('gradiendColorAdd')) {
+					this.style.background = 'rgba(255, 143, 42, 0.1)';
+				}
+			});
+			
+			link.addEventListener('mouseleave', function() {
+				if (!this.classList.contains('gradiendColorAdd')) {
+					this.style.background = 'transparent';
+				}
+			});
+		});
 
-			// Trigger the download by simulating a click
-			document.body.appendChild(anchor);
-			anchor.click();
-
-			// Clean up by removing the anchor element
-			document.body.removeChild(anchor);
-		}
+		// Navigation scroll effect
+		window.addEventListener('scroll', function() {
+			const header = document.querySelector('.custom-header');
+			if (header) {
+				if (window.scrollY > 100) {
+					header.style.background = 'rgba(0, 0, 0, 0.9)';
+					header.style.backdropFilter = 'blur(10px)';
+				} else {
+					header.style.background = 'transparent';
+					header.style.backdropFilter = 'none';
+				}
+			}
+		});
 	</script>
-</body>
 
+</body>
 </html>
